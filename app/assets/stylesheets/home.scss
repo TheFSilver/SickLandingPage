@@ -6,6 +6,7 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
+    background-color: #DDDDDF;
 }
 
 body {
@@ -27,33 +28,71 @@ body {
 
 .navbar {
   grid-area: 1 / 1 / 2 / 5;
-  margin: 10px;
+  background-color: #EEEEEF;
+  height: 100%;
+  margin: 5px 15px;
   border-style: solid;
-  border-width: 3px;
-  border-radius: 5%;
+  border-width: 0px;
   display: grid;
   grid-template-columns: 0.9fr 1.2fr 0.9fr;
   grid-template-rows: 1fr;
   grid-template-areas: "site-name navbar-buttons avatar";
 }
 
-.site-name { grid-area: site-name; }
-
-.navbar-buttons { grid-area: navbar-buttons; }
-
-.navbar-buttons ul li {
-  display: inline;
+.site-name {
+  grid-area: site-name;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 25px;
 }
 
-.avatar { grid-area: avatar; }
+.navbar-buttons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 80px 0 80px;
+  grid-area: navbar-buttons;
+}
+
+.myname {
+  margin-right: 15px;
+  color : black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.myname:hover {
+  color: #67676F;
+}
+
+.avatar {
+  grid-area: avatar;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
 
 .avatar_img {
   width: 75px;
   height: 75px;
   border-radius: 50% !important;
+  transition: transform .2s;
 }
 
-.big-title { grid-area: 2 / 1 / 3 / 5; }
+.avatar_img:hover {
+  transform: scale(1.25);
+}
+
+.big-title {
+  grid-area: 2 / 1 / 3 / 5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
 
 .content {
   grid-area: content;
@@ -65,20 +104,32 @@ body {
   grid-template-areas: "image-content text-content";
 }
 
-.image-content { grid-area: image-content; }
+.image-content {
+  grid-area: image-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
 .content_img {
   width: 85%;
   height: 85%;
 }
 
-.text-content { grid-area: text-content; }
+.text-content {
+  grid-area: text-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 .footer {
+  height: 60px;
   grid-area: footer;
-  margin: 10px;
+  background-color: #EEEEEF;
+  margin: 15px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 0px;
   display: grid;
   grid-template-columns: 0.9fr 1.2fr 0.9fr;
   grid-template-rows: 1fr;
@@ -86,13 +137,47 @@ body {
   grid-template-areas: "gitlink networks copyrights";
 }
 
-.gitlink { grid-area: gitlink; }
+.gitlink {
+  grid-area: gitlink;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
 
-.networks { grid-area: networks; }
+.github_link {
+  color : black;
+  text-decoration: none;
+  margin-left: 3px;
+  font-weight: bold;
+}
+
+.github_link:hover {
+  color : #67676F;
+}
+
+.networks {
+  grid-area: networks;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 80px 0 80px;
+}
 
 .net-logo {
   width: 30px;
   height: 30px;
+  transition: transform .2s;
 }
 
-.copyrights { grid-area: copyrights; }
+.net-logo:hover {
+  transform: scale(1.25);
+}
+
+.copyrights {
+  grid-area: copyrights;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
