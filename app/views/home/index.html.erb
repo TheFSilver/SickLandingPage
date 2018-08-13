@@ -3,13 +3,13 @@
   <div class="navbar">
 
     <div class="site-name">
-      <h2>Sick Landing Page</h2>
+      <h2><%= link_to "Sick Landing Page", "https://sick-page.herokuapp.com/", :class => "site_name_link" %></h2>
     </div>
 
     <div class="navbar-buttons">
-        <%= button_to "HTML Code", "https://github.com/TheFSilver/SickLandingPage/blob/master/app/views/home/index.html.erb", :method => :get, form: {target: '_blank'} %>
-        <%= button_to "CSS Code", "https://github.com/TheFSilver/SickLandingPage/blob/master/app/assets/stylesheets/home.scss", :method => :get, form: {target: '_blank'} %>
-        <%= button_to "Images", "https://github.com/TheFSilver/SickLandingPage/tree/master/app/assets/images", :method => :get, form: {target: '_blank'} %>
+        <%= button_to "HTML Code", "https://github.com/TheFSilver/SickLandingPage/blob/master/app/views/home/index.html.erb", :method => :get, form: {target: '_blank'}, :class => "myButton" %>
+        <%= button_to "CSS Code", "https://github.com/TheFSilver/SickLandingPage/blob/master/app/assets/stylesheets/home.scss", :method => :get, form: {target: '_blank'}, :class => "myButton" %>
+        <%= button_to "Images", "https://github.com/TheFSilver/SickLandingPage/tree/master/app/assets/images", :method => :get, form: {target: '_blank'}, :class => "myButton" %>
     </div>
 
     <div class="avatar">
