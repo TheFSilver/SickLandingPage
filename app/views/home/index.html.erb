@@ -26,16 +26,12 @@
   <div class="content">
 
     <div class="image-content">
-      <%= image_tag '1.jpeg', :class => "content_img" %>
       <%= image_tag '2.jpeg', :class => "content_img" %>
-      <%= image_tag '3.jpeg', :class => "content_img" %>
-      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-
     </div>
 
     <div class="text-content">
       <h3>Designing your website the way it should look...</h3>
+      <p>The website will be designed in a unique way.<br>The website includes unique tools that can be used for marketing, sales, etc.<br>The website includes functionality that is unique to this business or area of expertise (cost savings calculator, special reference database, product design tool, etc.)</p>
     </div>
 
   </div>
@@ -60,23 +56,3 @@
   </div>
 
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("content_img");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
