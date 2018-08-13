@@ -3,7 +3,7 @@
   <div class="navbar">
 
     <div class="site-name">
-      <h2><%= link_to "Sick Landing Page", "https://sick-page.herokuapp.com/", :class => "site_name_link" %></h2>
+      <h2><%= link_to "Sick Landing Page", "https://sick-page.herokuapp.com/", :class => "site_name_link", target: :_blank %></h2>
     </div>
 
     <div class="navbar-buttons">
@@ -13,8 +13,8 @@
     </div>
 
     <div class="avatar">
-      <%= link_to "François D.", "https://github.com/TheFSilver", :class => "myname" %>
-      <%= link_to image_tag('privateinvestocat.jpg', :class => "avatar_img", :alt => "Github Cat Inspector", :title => "GitHub Profile"), "https://github.com/TheFSilver"%>
+      <%= link_to "François D.", "https://github.com/TheFSilver", :class => "myname", target: :_blank %>
+      <%= link_to image_tag('privateinvestocat.jpg', :class => "avatar_img", :alt => "Github Cat Inspector", :title => "GitHub Profile"), "https://github.com/TheFSilver", target: :_blank %>
     </div>
 
   </div>
@@ -39,14 +39,14 @@
   <div class="footer">
 
     <div class="gitlink">
-      Repository GitHub: <%= link_to " TheFSilver", "https://github.com/TheFSilver/SickLandingPage", :class => "github_link" %>
+      Repository GitHub: <%= link_to " TheFSilver", "https://github.com/TheFSilver/SickLandingPage", :class => "github_link", target: :_blank %>
     </div>
 
     <div class="networks">
-      <%= link_to image_tag('fblogo.png', :class => "net-logo", :alt => "Black & White Facebook Logo", :title => "Facebook Profile"), "https://www.facebook.com/dasylva?ref=bookmarks" %>
-      <%= link_to image_tag('ttlogo.jpg', :class => "net-logo", :alt => "Black & White Twitter Logo", :title => "Twitter Profile"), "https://twitter.com/TheFSilver" %>
-      <%= link_to image_tag('inlogo.jpg', :class => "net-logo", :alt => "Black & White LinkedIn Logo", :title => "LinkedIn Profile"), "https://www.linkedin.com/in/francois-dasylva-64a300128/" %>
-      <%= link_to image_tag('iglogo.png', :class => "net-logo", :alt => "Black & White Instagram Logo", :title => "Instagram Profile"), "https://www.instagram.com/thefsilver/" %>
+      <%= link_to image_tag('fblogo.png', :class => "net-logo", :alt => "Black & White Facebook Logo", :title => "Facebook Profile"), "https://www.facebook.com/dasylva?ref=bookmarks", target: :_blank %>
+      <%= link_to image_tag('ttlogo.jpg', :class => "net-logo", :alt => "Black & White Twitter Logo", :title => "Twitter Profile"), "https://twitter.com/TheFSilver", target: :_blank %>
+      <%= link_to image_tag('inlogo.jpg', :class => "net-logo", :alt => "Black & White LinkedIn Logo", :title => "LinkedIn Profile"), "https://www.linkedin.com/in/francois-dasylva-64a300128/", target: :_blank %>
+      <%= link_to image_tag('iglogo.png', :class => "net-logo", :alt => "Black & White Instagram Logo", :title => "Instagram Profile"), "https://www.instagram.com/thefsilver/", target: :_blank %>
     </div>
 
     <div class="copyrights">
