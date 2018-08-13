@@ -1,0 +1,83 @@
+<div class="grid-container">
+
+  <div class="navbar">
+
+    <div class="site-name">
+      Sick Landing Page
+    </div>
+
+    <div class="navbar-buttons">
+      <ul>
+        <li><a href="https://github.com/TheFSilver/SickLandingPage">Repo Github</a></li>
+        <li><a href="#">lien 2</a></li>
+        <li><a href="#">lien 3</a></li>
+      </ul>
+    </div>
+
+    <div class="avatar">
+      <%= image_tag 'privateinvestocat.jpg', :class => "avatar_img" %>
+    </div>
+
+  </div>
+
+  <div class="big-title">
+    <h1>Sick Front-End Services</h1>
+  </div>
+
+  <div class="content">
+
+    <div class="image-content">
+      <%= image_tag '1.jpeg', :class => "content_img" %>
+      <%= image_tag '2.jpeg', :class => "content_img" %>
+      <%= image_tag '3.jpeg', :class => "content_img" %>
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+    </div>
+
+    <div class="text-content">
+      <h3>Designing your website the way it should look...</h3>
+    </div>
+
+  </div>
+
+  <div class="footer">
+
+    <div class="gitlink">
+      Github : <a href="https://github.com/TheFSilver">TheFSilver</a>
+    </div>
+
+    <div class="networks">
+      <%= image_tag 'fblogo.png', :class => "net-logo" %>
+      <%= image_tag 'ttlogo.jpg', :class => "net-logo" %>
+      <%= image_tag 'inlogo.jpg', :class => "net-logo" %>
+      <%= image_tag 'iglogo.png', :class => "net-logo" %>
+    </div>
+
+    <div class="copyrights">
+      © 2018 TheFSilver, Inc.
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("content_img");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>

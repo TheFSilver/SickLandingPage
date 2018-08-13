@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A sick landing page done by TheFSilver, almost just for fun..." />
+    <meta property="og:url"                content="#" />
+    <meta property="og:title"              content="Sick Landing Page" />
+    <meta property="og:description"        content="A sick landing page done by TheFSilver, almost just for fun..." />
+    <meta property="og:image"              content="#" />
+    <title>Sick Landing Page</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
